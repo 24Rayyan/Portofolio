@@ -1,5 +1,8 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link
       rel="stylesheet"
@@ -12,11 +15,23 @@
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      /* Custom Responsive Styles */
+      @media (max-width: 768px) {
+        .layout-container {
+          padding: 0;
+        }
+        .px-40 {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
       <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] px-10 py-3">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] px-4 sm:px-6 md:px-10 py-3">
           <div class="flex items-center gap-4 text-[#111418]">
             <div class="size-4">
               <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,36 +43,35 @@
                 ></path>
               </svg>
             </div>
-            <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Muhhamad  Rayyan  Rifqi  Pratama</h2>
-          </div>
+            <h2 class="text-[#111418] text-base md:text-lg font-bold leading-tight tracking-[-0.015em]">Muhhamad Rayyan Rifqi Pratama</h2>
           </div>
         </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
+        <div class="px-4 sm:px-8 md:px-16 lg:px-40 flex flex-1 justify-center py-5">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="flex p-4 @container">
               <div class="flex w-full flex-col gap-4 items-center">
                 <div class="flex gap-4 flex-col items-center">
                   <div>
-                     <img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32" src="Asset/Pas Photo.jpg" alt=""></div>
+                     <img class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-24 sm:min-h-32 w-24 sm:w-32" src="Asset/Pas Photo.jpg" alt=""></div>
                   <div class="flex flex-col items-center justify-center justify-center">
-                    <p class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Muhhamad Rayyan Rifqi Pratama</p>
-                    <p class="text-[#637588] text-base font-normal leading-normal text-center">Junior Developer, Tech enthusiast </p>
+                    <p class="text-[#111418] text-lg sm:text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Muhhamad Rayyan Rifqi Pratama</p>
+                    <p class="text-[#637588] text-sm sm:text-base font-normal leading-normal text-center">Tech enthusiast </p>
                   </div>
                 </div>
-                <div class="flex w-full max-w-[480px] gap-3 @[480px]:w-auto">
-                    <form action="Asset/MUHHAMAD RAYYAN CV.pdf">
+                <div class="flex w-full max-w-[480px] gap-3 flex-col sm:flex-row @[480px]:w-auto">
+                    <form action="Asset/CV Muhhamad Rayyan.pdf" class="w-full sm:w-auto">
                         <button type="submit"
-                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto"
+                        class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#f0f2f4] text-[#111418] text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto"
                       >
                         <span class="truncate">Download CV</span>
                       </button>
                     </form>
-                  <button
-                    href = "#contact"
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto"
+                  <a
+                    href="#contact"
+                    class="w-full sm:w-auto flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#1980e6] text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto"
                   >
                     <span class="truncate">Contact</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -80,6 +94,9 @@
               </div>
               <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-4 pr-4">
                 <p class="text-[#111418] text-sm font-medium leading-normal">Figma</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-4 pr-4">
+                <p class="text-[#111418] text-sm font-medium leading-normal">Software Testing</p>
               </div>
               <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-4 pr-4">
                 <p class="text-[#111418] text-sm font-medium leading-normal">Microsoft Office</p>
@@ -106,30 +123,30 @@
               and I'm eager to continue learning and growing in this rapidly-evolving field.
             </p>
             <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Education</h3>
-            <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-white px-4 min-h-[72px] py-2">
               <div
                 class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
                 data-size="24px"
                 data-weight="regular"
               >
-                <img src="Asset/SMKN 2.png" alt="">
+                <img src="Asset/SMKN 2.png" alt="" class="w-full h-full object-contain p-1">
               </div>
               <div class="flex flex-col justify-center">
                 <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">SMKN 2 Bandung, Rekayasa Perangkat Lunak (RPL)</p>
                 <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2">2018-2022</p>
               </div>
             </div>
-            <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-white px-4 min-h-[72px] py-2">
               <div
                 class="text-[#111418] flex items-center justify-center rounded-lg bg-[#f0f2f4] shrink-0 size-12"
                 data-size="24px"
                 data-weight="regular"
               >
-                <img src="Asset/LOGO WIDYATAMA.png" alt="">
+                <img src="Asset/LOGO WIDYATAMA.png" alt="" class="w-full h-full object-contain p-1">
               </div>
               <div class="flex flex-col justify-center">
                 <p class="text-[#111418] text-base font-medium leading-normal line-clamp-1">Widyatama University, Sistem Informasi</p>
-                <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2"> Sedang Berjalan  (Semester 3)</p>
+                <p class="text-[#637588] text-sm font-normal leading-normal line-clamp-2"> Sedang Berjalan (Semester 4)</p>
               </div>
             </div>
             <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Hobbies &amp; Interests</h3>
@@ -145,6 +162,9 @@
               </div>
               <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-4 pr-4">
                 <p class="text-[#111418] text-sm font-medium leading-normal">Reading</p>
+              </div>
+              <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-4 pr-4">
+                <p class="text-[#111418] text-sm font-medium leading-normal">Photography</p>
               </div>
             </div>
             <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Personal Interests</h3>
@@ -162,31 +182,62 @@
                 <p class="text-[#111418] text-sm font-medium leading-normal">Artificial Intelligence</p>
               </div>
               <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">Comic</p>
+                <p class="text-[#111418] text-sm font-medium leading-normal">Quality Assurance</p>
               </div>
               <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#f0f2f4] pl-4 pr-4">
-                <p class="text-[#111418] text-sm font-medium leading-normal">Novel</p>
+                <p class="text-[#111418] text-sm font-medium leading-normal">Project Manager</p>
               </div>
             </div>
+            <h3 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Certificates</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+              <!-- Sertifikat 1 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                  <img src="Asset/QA - CERTIFICATE.jpg" alt="Quality Assurance Certificate" class="w-full h-48 object-cover" />
+                  <div class="p-4 flex-grow">
+                      <h4 class="text-[#111418] text-md font-semibold">Quality Assurance</h4>
+                      <p class="text-[#6b7280] text-sm mt-2">HabisKerja - Maret 2025</p>
+                  </div>
+                  <div class="p-4 flex flex-col sm:flex-row gap-2">
+                      <a href="Asset/Muhhamad-Rayyan-Kelas-Quality-Assurance-Sertifikat-Kelas-QA-Habiskerja (1) (1).pdf" download class="w-full text-center bg-[#f0f2f4] text-[#111418] text-sm font-medium py-2 px-4 rounded-lg hover:bg-[#e0e2e4] transition-colors">
+                          Download Certificate
+                      </a>
+                      <a href="path/to/qa-portfolio.pdf" download class="w-full text-center bg-[#111418] text-white text-sm font-medium py-2 px-4 rounded-lg hover:bg-[#000000] transition-colors">
+                          Download Portfolio
+                      </a>
+                  </div>
+              </div>
+          
+              <!-- Sertifikat 2 -->
+              <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+                  <img src="Asset/Frontend - Certificate.jpg" alt="Frontend Certificate" class="w-full h-48 object-cover" />
+                  <div class="p-4 flex-grow">
+                      <h4 class="text-[#111418] text-md font-semibold">Frontend - HTML</h4>
+                      <p class="text-[#6b7280] text-sm mt-2">MySkill - Juli 2024</p>
+                  </div>
+                  <div class="p-4 flex gap-2">
+                      <a href="Asset/Frontend Certificate.pdf" download class="w-full text-center bg-[#f0f2f4] text-[#111418] text-sm font-medium py-2 px-4 rounded-lg hover:bg-[#e0e2e4] transition-colors">
+                          Download Certificate
+                      </a>
+                  </div>
+              </div>
+          </div>
           </div>
         </div>
-        <h3 id="contact" class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 mt-5 pt-4" style="text-align: center;margin-bottom: 10px;">Contact</h3>
-        <div class="flex justify-center items-center p-3 mt-5 mb-5 flex-wrap pr-4">
-            <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl pl-4 pr-4 bg-[#f0f2f4]">
+        <h3 id="contact" class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 mt-5 pt-4 text-center mb-5">Contact</h3>
+        <div class="flex justify-center items-center p-3 mt-5 mb-5 flex-wrap gap-3 pr-4">
+          <div class="flex h-auto min-h-8 py-2 shrink-0 items-center justify-center gap-x-2 rounded-xl pl-4 pr-4 bg-[#f0f2f4]">
               <img src="Asset/gmail.png" alt="Gmail" class="w-6 h-6" />
-              <span class="ml-2">ryn.rfqi@gmail.com</span>
-            </div>
-            <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl pl-4 pr-4 bg-[#f0f2f4]">
-              <img src="Asset/instagram.png" alt="Instagram" class="w-6 h-6" />
-              <span class="ml-2">ryn.rfqi</span>
-            </div>
-            <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl pl-4 pr-4 bg-[#f0f2f4]">
-              <img src="Asset/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
-              <span class="ml-2">Muhammad Rayyan</span>
-            </div>
+              <span class="ml-2 text-sm sm:text-base break-all sm:break-normal">ryn.rfqi@gmail.com</span>
           </div>
-          
-              
+          <div class="flex h-auto min-h-8 py-2 shrink-0 items-center justify-center gap-x-2 rounded-xl pl-4 pr-4 bg-[#f0f2f4]">
+              <img src="Asset/instagram.png" alt="Instagram" class="w-6 h-6" />
+              <span class="ml-2 text-sm sm:text-base">ryn.rfqi</span>
+          </div>
+          <div class="flex h-auto min-h-8 py-2 shrink-0 items-center justify-center gap-x-2 rounded-xl pl-4 pr-4 bg-[#f0f2f4]">
+              <img src="Asset/linkedin.png" alt="LinkedIn" class="w-6 h-6" />
+              <span class="ml-2 text-sm sm:text-base">Muhammad Rayyan</span>
+          </div>
+      </div>
       </div>
     </div>
   </body>
