@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RayyanWorks | Digital Portfolio</title>
@@ -186,7 +186,7 @@
         </svg>
       </div>
     </button>
-    
+
     <header
       class="fixed top-0 left-0 right-0 z-50 bg-[var(--bg-card)]/50 backdrop-blur-lg transition-colors duration-500 border-b border-[var(--border-color)]"
     >
@@ -695,7 +695,7 @@
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            Mari Berdiskusi.
+            Mari Berdiskusi
           </h2>
           <div class="mt-8" data-aos="fade-up" data-aos-delay="200">
             <a
@@ -747,7 +747,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+
     <script>
       AOS.init({ duration: 800, once: true, offset: 120 });
 
@@ -779,15 +779,15 @@
 
       // Fungsi untuk mengubah tema
       const toggleTheme = () => {
-          body.classList.toggle("dark");
-          const isDark = body.classList.contains("dark");
-          if (isDark) {
-              lightIcon.classList.add("scale-0", "opacity-0", "-rotate-180");
-              darkIcon.classList.remove("scale-0", "opacity-0", "rotate-180");
-          } else {
-              lightIcon.classList.remove("scale-0", "opacity-0", "-rotate-180");
-              darkIcon.classList.add("scale-0", "opacity-0", "rotate-180");
-          }
+        body.classList.toggle("dark");
+        const isDark = body.classList.contains("dark");
+        if (isDark) {
+          lightIcon.classList.add("scale-0", "opacity-0", "-rotate-180");
+          darkIcon.classList.remove("scale-0", "opacity-0", "rotate-180");
+        } else {
+          lightIcon.classList.remove("scale-0", "opacity-0", "-rotate-180");
+          darkIcon.classList.add("scale-0", "opacity-0", "rotate-180");
+        }
       };
 
       // Cek preferensi sistem saat pertama kali load
