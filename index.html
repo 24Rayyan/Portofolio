@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RayyanWorks | Digital Portfolio</title>
@@ -128,7 +128,7 @@
         opacity: 1;
       }
 
-      /* [BARU] Styling untuk Active Nav Link */
+      /* Styling untuk Active Nav Link */
       .nav-link.active {
         color: var(--accent);
         font-weight: 700;
@@ -148,15 +148,6 @@
   <body
     class="bg-[var(--bg-main)] text-[var(--text-primary)] antialiased transition-colors duration-500"
   >
-    <div
-      id="preloader"
-      class="fixed inset-0 bg-[var(--bg-main)] z-[1000000] flex justify-center items-center transition-opacity duration-700"
-    >
-      <div class="text-3xl font-bold text-[var(--accent)] animate-pulse">
-        R.
-      </div>
-    </div>
-
     <button
       id="mode-toggle"
       aria-label="Toggle Theme"
@@ -195,10 +186,7 @@
         </svg>
       </div>
     </button>
-
-    <div class="cursor-dot" data-cursor-dot></div>
-    <div class="cursor-outline" data-cursor-outline></div>
-
+    
     <header
       class="fixed top-0 left-0 right-0 z-50 bg-[var(--bg-card)]/50 backdrop-blur-lg transition-colors duration-500 border-b border-[var(--border-color)]"
     >
@@ -263,7 +251,6 @@
           >
             Sertifikat Course
           </h2>
-
           <div
             class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 group"
           >
@@ -271,8 +258,6 @@
               class="bg-[var(--bg-main)] rounded-lg shadow-lg overflow-hidden flex flex-col border border-[var(--border-color)] transition-all duration-300 hover:!opacity-100 group-hover:opacity-50"
               data-aos="fade-up"
               data-aos-delay="100"
-              data-interactive
-              data-tilt
             >
               <img
                 src="Asset/QA - CERTIFICATE.jpg"
@@ -301,8 +286,6 @@
               class="bg-[var(--bg-main)] rounded-lg shadow-lg overflow-hidden flex flex-col border border-[var(--border-color)] transition-all duration-300 hover:!opacity-100 group-hover:opacity-50"
               data-aos="fade-up"
               data-aos-delay="200"
-              data-interactive
-              data-tilt
             >
               <img
                 src="Asset/Frontend - Certificate.jpg"
@@ -331,8 +314,6 @@
               class="bg-[var(--bg-main)] rounded-lg shadow-lg overflow-hidden flex flex-col border border-[var(--border-color)] transition-all duration-300 hover:!opacity-100 group-hover:opacity-50"
               data-aos="fade-up"
               data-aos-delay="300"
-              data-interactive
-              data-tilt
             >
               <img
                 src="Asset/BWA.jpg"
@@ -376,7 +357,6 @@
             <div class="lg:col-span-2 flex justify-center" data-aos="fade-up">
               <div
                 class="relative w-[300px] h-[380px] md:w-[350px] md:h-[440px]"
-                data-tilt
               >
                 <div
                   class="absolute -top-4 -left-4 w-full h-full border-2 border-[var(--border-color)] rounded-2xl transform rotate-[-6deg] transition-colors duration-500"
@@ -638,56 +618,56 @@
           </p>
           <div class="swiper mt-16" data-aos="fade-up" data-aos-delay="200">
             <div class="swiper-wrapper">
-              <div class="swiper-slide" data-interactive>
+              <div class="swiper-slide">
                 <img
                   src="Asset/HF1.jpg"
                   alt="Hasil Fotografi 1"
                   class="w-full h-96 object-cover rounded-lg shadow-lg"
                 />
               </div>
-              <div class="swiper-slide" data-interactive>
+              <div class="swiper-slide">
                 <img
                   src="Asset/HF2.jpg"
                   alt="Hasil Fotografi 2"
                   class="w-full h-96 object-cover rounded-lg shadow-lg"
                 />
               </div>
-              <div class="swiper-slide" data-interactive>
+              <div class="swiper-slide">
                 <img
                   src="Asset/HF3.jpg"
                   alt="Hasil Fotografi 3"
                   class="w-full h-96 object-cover rounded-lg shadow-lg"
                 />
               </div>
-              <div class="swiper-slide" data-interactive>
+              <div class="swiper-slide">
                 <img
                   src="Asset/HF4.jpg"
                   alt="Hasil Fotografi 4"
                   class="w-full h-96 object-cover rounded-lg shadow-lg"
                 />
               </div>
-              <div class="swiper-slide" data-interactive>
+              <div class="swiper-slide">
                 <img
                   src="Asset/HF5.jpg"
                   alt="Hasil Fotografi 5"
                   class="w-full h-96 object-cover rounded-lg shadow-lg"
                 />
               </div>
-              <div class="swiper-slide" data-interactive>
+              <div class="swiper-slide">
                 <img
                   src="Asset/HF6.jpg"
                   alt="Hasil Fotografi 6"
                   class="w-full h-96 object-cover rounded-lg shadow-lg"
                 />
               </div>
-              <div class="swiper-slide" data-interactive>
+              <div class="swiper-slide">
                 <img
                   src="Asset/HF7.jpg"
                   alt="Hasil Fotografi 7"
                   class="w-full h-96 object-cover rounded-lg shadow-lg"
                 />
               </div>
-              <div class="swiper-slide" data-interactive>
+              <div class="swiper-slide">
                 <img
                   src="Asset/HF8.jpg"
                   alt="Hasil Fotografi 8"
@@ -728,7 +708,7 @@
             <a
               href="Asset/CV Muhhamad Rayyan.pdf"
               download
-              class="inline-block bg-[var(--accent)] text-white dark:text-black font-bold py-4 px-8 rounded-lg shadow-lg hover:bg-opacity-90 transition-all hover:scale-105"
+              class="inline-block bg-[var(--accent)] text-white dark:text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:bg-opacity-90 transition-all hover:scale-105"
               >Download CV</a
             >
           </div>
@@ -767,23 +747,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"
-    ></script>
-
+    
     <script>
-      // Preloader
-      window.addEventListener("load", () => {
-        const preloader = document.getElementById("preloader");
-        setTimeout(() => {
-          preloader.style.opacity = "0";
-          setTimeout(() => {
-            preloader.style.display = "none";
-          }, 700);
-        }, 1000);
-      });
-
       AOS.init({ duration: 800, once: true, offset: 120 });
 
       const swiper = new Swiper(".swiper", {
@@ -806,81 +771,38 @@
         },
       });
 
-      VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
-        max: 10,
-        speed: 400,
-        glare: true,
-        "max-glare": 0.2,
-      });
-
-      const cursorDot = document.querySelector("[data-cursor-dot]");
-      const cursorOutline = document.querySelector("[data-cursor-outline]");
-      window.addEventListener("mousemove", (e) => {
-        const { clientX, clientY } = e;
-        cursorDot.style.left = `${clientX}px`;
-        cursorDot.style.top = `${clientY}px`;
-        cursorOutline.animate(
-          { left: `${clientX}px`, top: `${clientY}px` },
-          { duration: 300, fill: "forwards" }
-        );
-      });
-      const interactiveElements = document.querySelectorAll(
-        "a, button, [data-interactive]"
-      );
-      interactiveElements.forEach((el) => {
-        el.addEventListener("mouseover", () =>
-          cursorOutline.classList.add("hovered")
-        );
-        el.addEventListener("mouseleave", () =>
-          cursorOutline.classList.remove("hovered")
-        );
-      });
-
-      // [DIUBAH] Logika untuk Dark Mode Toggle dengan transisi Preloader
+      // Logika untuk Dark Mode Toggle
       const toggleButton = document.getElementById("mode-toggle");
       const lightIcon = document.querySelector(".toggle-icon-light");
       const darkIcon = document.querySelector(".toggle-icon-dark");
-      const preloader = document.getElementById("preloader");
       const body = document.body;
 
+      // Fungsi untuk mengubah tema
+      const toggleTheme = () => {
+          body.classList.toggle("dark");
+          const isDark = body.classList.contains("dark");
+          if (isDark) {
+              lightIcon.classList.add("scale-0", "opacity-0", "-rotate-180");
+              darkIcon.classList.remove("scale-0", "opacity-0", "rotate-180");
+          } else {
+              lightIcon.classList.remove("scale-0", "opacity-0", "-rotate-180");
+              darkIcon.classList.add("scale-0", "opacity-0", "rotate-180");
+          }
+      };
+
+      // Cek preferensi sistem saat pertama kali load
       if (
         window.matchMedia &&
         window.matchMedia("(prefers-color-scheme: dark)").matches &&
         !body.classList.contains("dark")
       ) {
-        body.classList.add("dark");
-        lightIcon.classList.add("scale-0", "opacity-0", "-rotate-180");
-        darkIcon.classList.remove("scale-0", "opacity-0", "rotate-180");
+        // Tidak otomatis ganti ke dark mode, biarkan default light
       }
 
-      toggleButton.addEventListener("click", () => {
-        preloader.style.display = "flex";
+      // Event listener untuk tombol
+      toggleButton.addEventListener("click", toggleTheme);
 
-        setTimeout(() => {
-          preloader.style.opacity = "1";
-        }, 10);
-
-        setTimeout(() => {
-          const isDark = body.classList.contains("dark");
-          body.classList.toggle("dark");
-
-          if (!isDark) {
-            lightIcon.classList.add("scale-0", "opacity-0", "-rotate-180");
-            darkIcon.classList.remove("scale-0", "opacity-0", "rotate-180");
-          } else {
-            lightIcon.classList.remove("scale-0", "opacity-0", "-rotate-180");
-            darkIcon.classList.add("scale-0", "opacity-0", "rotate-180");
-          }
-
-          setTimeout(() => {
-            preloader.style.opacity = "0";
-            setTimeout(() => {
-              preloader.style.display = "none";
-            }, 700);
-          }, 500);
-        }, 500);
-      });
-
+      // Logika untuk Active Nav on Scroll
       const sections = document.querySelectorAll("main section");
       const navLinks = document.querySelectorAll("header nav a");
       const observer = new IntersectionObserver(
