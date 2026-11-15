@@ -639,16 +639,16 @@ const CONFIG = {
     { label: "Instagram", href: "https://www.instagram.com/ryn.rfqi/" }
   ]
 };
-// Newest first. placeholder: true shows a "placeholder" tag — remove it once the entry is real.
+// Newest first. Add a badge when an entry needs a label beside its title.
 const EXPERIENCE = [
-  { period: "November 2025 — Present", role: "IT Support", org: "PT ValueStream International ", desc: "One or two sentences on what you did and what you owned.", placeholder: true },
-  { period: "July 2026 — Present", role: "Operations Manager", org: "PT Dwitama Cipta Internusa", desc: "One or two sentences on what you did and what you owned.", placeholder: true },
-  { period: "August 2022 - November 2025", role: "Office Administrator", org: "PT Karya Jaya Mahendra", desc: "One or two sentences on what you did and what you owned.", placeholder: true },
-  { period: "December 2020 - May 2021 (Internship)", role: "Mobile Developer", org: "PT BISA Artifisial Indonesia", desc: "One or two sentences on what you did and what you owned.", placeholder: true }
+  { period: "November 2025 — Present", role: "IT Support", badge: "Fulltime", org: "PT ValueStream International ", desc: "Performed manual testing to ensure application functionality and reliability. Provided application support by analyzing bugs, assisting application development, and managing database operations to maintain system performance and data integrity." },
+  { period: "July 2026 — Present", role: "Operations Manager", badge: "Freelance Remote", org: "PT Dwitama Cipta Internusa", desc: "Managed business operations and coordinated business processes to ensure efficient day-to-day activities. Oversaw back-office functions, including tax administration and operational support." },
+  { period: "August 2022 - November 2025", role: "Office Administrator", badge: "Fulltime", org: "PT Karya Jaya Mahendra", desc: "Managed and verified program claims documentation, maintained daily sales records through internal systems, and handled monthly VAT (PPN) reporting and annual tax return (SPT Tahunan) documentation. Prepared periodic sales performance and administrative reports to support management evaluation and decision-making." },
+  { period: "December 2020 - May 2021", role: "Mobile Developer", badge: "Internship", org: "PT BISA Artifisial Indonesia", desc: "Learned Android mobile application development using Java and Android Studio. Contributed to the development of a guide application as part of the internship program." }
 ];
 const EDUCATION = [
-  { period: "2023 — 2027", role: "Information Systems", org: "Widyatama University", desc: "Business Process, Information Systems & Technology.", placeholder: true },
-  { period: "2019 — 2022", role: "Software Engineering / Rekayasa Perangkat Lunak", org: "SMKN 2 Bandung", desc: "Software Development & Web Programming.", placeholder: true }
+  { period: "2023 — 2027", role: "Information Systems", badge: "Bachelor's Degree", org: "Widyatama University", desc: "Business Process, Information Systems & Technology." },
+  { period: "2019 — 2022", role: "Software Engineering", badge: "Vocational High School", org: "SMKN 2 Bandung", desc: "Software Development & Web Programming." }
 ];
 // tier: "lead" (large) | "feature" (medium, mirrored) | omitted = compact row. Details open in a dialog. Optional: href: "https://..." makes the screenshot clickable and adds a "View project" link.
 const PROJECTS = [
@@ -716,7 +716,7 @@ const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;",
 const timeline = list => list.map(t => `
   <li class="tl-item">
     <p class="period mono">${esc(t.period)}</p>
-    <h4>${esc(t.role)}${t.placeholder ? '<span class="tag mono">placeholder</span>' : ""}</h4>
+    <h4>${esc(t.role)}${t.badge ? `<span class="tag mono">${esc(t.badge)}</span>` : ""}</h4>
     <p class="org">${esc(t.org)}</p>
     ${t.desc ? `<p class="desc">${esc(t.desc)}</p>` : ""}
   </li>`).join("");
